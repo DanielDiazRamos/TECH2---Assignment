@@ -82,14 +82,16 @@ def std_builtin(x):
         Standard deviation of the list of numbers.
     """
     # WE CALCULATE THE LENGTH AND THE SUM OF ALL TERMS, ALLOWING US TO COMPUTE THE MEAN OF X
-
+    
+    x = np.array(x)
+    
     N=len(x)
 
     meanx = (1/N) * np.sum(x)
 
     # WE COMPUTE "S" (THE MEAN OF THE SQUARES)
 
-    S = (1/N) * np.sum(x**2)
+    S = (1/N) * np.sum((np.array(x))**2)
 
     # WE COMPUTE THE VARIANCE
 
