@@ -18,7 +18,7 @@ print("Result with loops: ", part_A.std_loops(x))
 
 # NOW WE CALCULATE THE RESULT USING THE FUNCTION WHICH USES BUILT-IN FUNCTIONS
 
-x = np.array([1, 2, 3, 4, 5])
+x = [1, 2, 3, 4, 5]
 print("Result with functions: ", part_A.std_builtin(x))
 
 
